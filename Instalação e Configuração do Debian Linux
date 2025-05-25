@@ -1,10 +1,22 @@
 # Documentação
 # Instalação
-  -Para conseguir baixar é preciso que vc tenha instalado o Virtual Box para conseguir utilizar a máquina virtual e tenha seu arquivo .iso instalado
-  -Verifique requisitos de hardware:
+-Verifique requisitos de hardware:
     -tipo de instalação 
       sem desktop: minímo de RAM (256 megabytes), recomendado (512 megabytes), disco rígido (4 gigabytes)
       com desktop: minímo de RAM (1 gigabytes), recomendado ( 2 gigabytes), disco rígido (10 gigabytes)
+  -Para conseguir baixar é preciso que vc tenha instalado o Virtual Box para conseguir utilizar a máquina virtual e tenha seu arquivo .iso instalado
+    passo a passo:
+    1.clique em novo e escolha o arquivo .iso do seu debian, 
+    2.escolha o espaço que vc vai designar para a sua máquina,
+    3.agora é só instalar, quando abrir escolha a opção de configurar o debian pelo gráfico,
+    4.coloque a liguagem de sua preferença e depois digite o nome do seu hostname com letra minúscula,
+    5.coloque sua senha root ( nunca a esqueça),
+    6.coloque seu nome de usuário e a senha,
+    7.utilize o disco inteiro e faça as mudanças nele,
+    8.utilize a separação para iniciantes,
+    9.Não ler midias adicionais
+    10.continue utilizando debian.org
+    11.na seleção de softwares escolha: servidor we e ssh, xfce, ambiente de trabalho do debian e sistema padrão
       
 # DNS
 # DHCP
