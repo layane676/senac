@@ -1,0 +1,16 @@
+#Instalação 
+Etapa 1:
+  Vamos usar o nosso velho amigo VirtualBox para instalar o pfSense 2.4.4. Certifique-se de baixar o arquivo de imagem de CD (ISO).
+
+Etapa 2:
+passo 1. 
+  Tamanho da memória : 1024MB (ou mais, se você quiser)
+  Disco rígido : crie um disco rígido virtual agora
+  Tipo de arquivo do disco rígido : VDI
+  Armazenamento no disco rígido físico : alocado dinamicamente
+passo 2. Para Localização e tamanho do arquivo, escolha 8 GB e escolha o local em que deseja salvar o disco rígido virtual.
+passo  3:
+  Agora vamos atribuir mais 2 interfaces de rede. Só assim temos uma VM mais realista e mais interfaces para brincar. Clique com o botão direito do mouse na sua VM recém-criada e selecione Configurações .
+  Navegue até a guia Rede e primeiro mude o NAT para Rede interna , para que o servidor DHCP do pfSense não interfira na sua própria rede.
+  Observe que, com a rede interna, você não pode acessar a interface da Web pfSense no seu computador host. Você precisaria de outra máquina virtual (como o Ubuntu) para acessar o pfSense. Essa é a maneira mais segura de se divertir sem quebrar nada em sua rede física.
+Se você deve ou deseja acessar o pfSense no seu computador host, defina as interfaces como “Adaptador somente para host”.
