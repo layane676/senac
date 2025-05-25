@@ -1,5 +1,5 @@
-#*Adquirindo e configurando o SO.*
- -Adquira a ISO no site oficial da microsoft para evitar possíveis problemas de segurança.
+#*Adquirindo e configurando o SO do windows2008.*
+ -Adquira a ISO do Windows2008 no site oficial da microsoft para evitar possíveis problemas de segurança.
  -Ao baixar o arquivo, acesse o Virtual Box e clique em "novo".
  -Dê um nome para a sua máquina virtual, selecione a ISO da máquina, e escolha suas especificidades (tipo e versão) nos seus devidos locais.
  -Na página seguinte, selecione a quantidade de memória da sua máquina, de preferência na quantidade recomendada (em verde) para o seu dispositivo.
@@ -8,7 +8,7 @@
  -Escolha, de preferência, a opção "dinamicamente alocado" para que o tamanho do disco possa se expandir conforme você ocupe o espaço deste.
  -Caso tenha escolhido criar um novo disco, selecione o tamanho deste. Você pode apenas deixar a opção padrão selecionada pelo Virtual Box, se preferir
  -Agora, você pode iniciar sua máquina virtual ao clicar em "finalizar."
-#Instalando o Windows.
+#Instalando o Windows2008.
  -Ao iniciar a máquina virtual, pode ser que lhe seja pedido a localização da ISO novamente. Clique na pasta de arquivos, em acrescentar e procure a imagem.
 **você pode pular o passo anterior traqnuilamente caso isso não tenha ocorrido.
  - No idioma, selecione o de sua preferência (o português ABNT2 possui cedilha.)
@@ -19,4 +19,37 @@
  -Aguarde a´te que possa escolher o nome de sua Máquina, seu User e sua senha.
  -Avançando, seu windows provavelmente iniciará normalmente.
 
-#
+#Instalação do DNS no windows2008.
+ -Clique em "iniciar" e depois em "Ferramentas Administrativas" para acessar o seu Server Manager.
+ -Clique em "funções do servidor"
+ -Depois, clique em "Gerenciador de servidores." 
+ -Selecione DNS SERVER na lista de opções.
+ -Aceite as observações.
+ -Clique em instalar.
+ -Depois de carregar, você pode acessar o DNS ao repetir o primeiro passo e clicar em "DNS".
+#Configuração do DNS no windows2008.
+ *ZONA DIRETA:
+   -Clique com o botão direito em "Zona de pesquisa direta."
+   -Escolha "zona primária" e nomeie-a com um nome "exemplo.local"
+ *Adicionando o registro A:
+  -Clique com o botão direito no "Exemplo.local
+  -Clique em "Novo Host" e seleciona A ou AAAA.
+  -Digite o nome do seu host e o IP a ele atribuído.
+ *Adicionando um CNAME:
+  -Clique com o botão direito em "Zona de pesquisa direita" e então em "Novo Alias"
+  -Atribua o nome original e o outro nome.
+ *Adicionando o MX.
+  -Clique com o botão direito em "Zona de pesquisa direta" e então em "Novo Mail Exchanger"
+  -Deixe o campo "Host or child domain" vazio (para o domínio principal).
+  -Digite o FQDN do servidor de e-mail (ex: mail.empresa.local)
+*ZONA INVERSA:
+  -Clique com o botão direito em "Zona de pesquisa inversa"
+  -Selecione sua rede e então atribua a zona inversa à direta já criada.
+
+TESTES DE COMANDOS:
+*nslookup:
+nslookup servidor.empresa.local: Verifica o registro A.
+nslookup -type=mx empresa.local: Lista servidores MX.
+*dig (Windows):
+Instale o BIND para usar o dig.
+Comando: dig empresa.local MX
