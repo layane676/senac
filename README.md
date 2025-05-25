@@ -8,7 +8,7 @@
     - Youtube
 
   # Instruções:
-   Cada arquivo no repositórioterá seu passo a passo indicado e é preciso ter o virtual box para a realização de todo esse processo
+   Cada arquivo no repositório terá seu passo a passo indicado e é preciso ter o Virtual Box para a realização de todo esse processo
   # Membros: 
    - Lavinia Pimenta
    - Sarah Layane
