@@ -1,3 +1,7 @@
 #*Adquirindo e instalando o SO.*
  -Adquira a ISO no site oficial da microsoft para evitar possíveis problemas de segurança.
- -Ao baixar o arquivo, acesse o Virtual Box e selecione a ISO no local indicado.
+ -Ao baixar o arquivo, acesse o Virtual Box e clique em "novo".
+ -Dê um nome para a sua máquina virtual, selecione a ISO da máquina, e escolha suas especificidades (tipo e versão) nos seus devidos locais.
+ -Na página seguinte, selecione a quantidade de memória da sua máquina, de preferência na quantidade recomendada (em verde) para o seu dispositivo.
+ -Então, selecione a opção de sua preferência na próxima página a respeito do disco da sua máquina, (não utilizar um disco virtual, usar um novo ou acrescentar um que já exista.)
+ -Selecione 
