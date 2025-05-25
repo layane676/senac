@@ -2,8 +2,9 @@
 # Instalação
   -Para conseguir baixar é preciso que vc tenha instalado o Virtual Box para conseguir utilizar a máquina virtual e tenha seu arquivo .iso instalado
   -Verifique requisitos de hardware:
-    -tipo de instalação sem desktop:
-      
+    -tipo de instalação 
+      sem desktop: minímo de RAM (256 megabytes), recomendado (512 megabytes), disco rígido (4 gigabytes)
+      com desktop: minímo de RAM (1 gigabytes), recomendado ( 2 gigabytes), disco rígido (10 gigabytes)
       
 # DNS
 # DHCP
