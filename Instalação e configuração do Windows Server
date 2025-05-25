@@ -53,3 +53,49 @@ nslookup -type=mx empresa.local: Lista servidores MX.
 *dig (Windows):
 Instale o BIND para usar o dig.
 Comando: dig empresa.local MX
+
+#Instalando e configurando o DHCP no windows 2008
+Clique em "iniciar" e depois em "Ferramentas Administrativas" para acessar o seu Server Manager.
+ -Clique em "funções do servidor"
+ -Depois, clique em "Gerenciador de servidores." 
+ -Selecione DHCP na lista de opções.
+ -Clique em "próximo" nas observações.
+ -Selecione a sua rede.
+ -Selecione seu dominio, seu DNS anteriormente criado, e um alternativo se preferir.
+ -Selecione as opções disponiveis (WINS necesário ou não e especifique o servidor WINS se necessario.)
+ -Clique em "adicionar", o inicio e o fim dos IPs, a mascara, o gateway, e o tipo de sub-rede.
+ -Ative-o e clique em ok.
+ -Habilite ou não o modo sem monitoração.
+ -Use as credenciais do seu usuario para permitir o DHCP.
+ -Clique em instalar.
+ -Depois de carregar, você pode acessar o DHCP ao repetir o primeiro passo e clicar em "DHCP".
+ -Clique no seu servidor, em "IPV4/IPV6" (dependendo de qual você escolheu anteriormente.) 
+ -Clique em "escopo" com o botão direito para alterar as propriedades e personalizar sua rede.
+ -Cheque, em "iniciar," "painel de controle" e "Rede e Internet" para checar se sua máquina se conectou.
+
+COMANDO 
+-abra o prompt de comando
+ Ipconfig /all
+ ping 192.168.0.0 (ip exemplo)
+
+#baixar Active directory e configurar no windows 2008.
+-Tenha configurado os itens anteriores para evitar problemas futuros.
+-Clique em "iniciar" e depois em "Ferramentas Administrativas" para acessar o seu Server Manager.
+ -Clique em "funções do servidor"
+ -Depois, clique em "Gerenciador de servidores." 
+ -Selecione "active directory domain services" na lista de opções
+ -Clique em next tranquilamente e aguarde a instalação.
+ -Em "sumário de funções, clique em "Active directory domain services" e execute o dcpromo.exe na barra de aviso.
+ -Avance até que precise clicar em "criar novo dominio" e coloque o nome deste, ex: "cuscuz.local"
+ -Após carregar, selecione sua versão do windows e siga avancçando.
+ -Selecione o DNS.
+ -Clique em "sim" na barra de aviso sobre o dns.
+ -Coloque uma senha do adminstrador que será usado para iniciar o AD.
+ -Clique em finalizar e reinicie o PC.
+ -Depois de carregar, você pode acessar o AD ao repetir o primeiro passo e clicar em qualquer item do AD da lista.
+ -Você pode adicionar users ao clicar no item "users e pcs do active directory", clicar com o botão direito e "novo".
+
+COMANDOS
+nslookup #resolução dns para checar o server padrão.
+start //cuscuz.local #FQDN do dominio.
+ 
